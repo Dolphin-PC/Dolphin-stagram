@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		9A47CBD823F0199E0004CAEC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A47CBD723F0199E0004CAEC /* GoogleService-Info.plist */; };
 		9A47CBDB23F026720004CAEC /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9A47CBDA23F026720004CAEC /* SDWebImageSwiftUI */; };
+		9A47CBDE23F037B30004CAEC /* statusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A47CBDD23F037B30004CAEC /* statusView.swift */; };
+		9A47CBE023F037F90004CAEC /* statusCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A47CBDF23F037F90004CAEC /* statusCard.swift */; };
+		9A47CBE223F038440004CAEC /* postCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A47CBE123F038440004CAEC /* postCard.swift */; };
+		9A47CBE423F0387C0004CAEC /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A47CBE323F0387C0004CAEC /* Home.swift */; };
+		9A47CBE723F038AD0004CAEC /* Observers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A47CBE623F038AD0004CAEC /* Observers.swift */; };
+		9A47CBE923F038CE0004CAEC /* dataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A47CBE823F038CE0004CAEC /* dataTypes.swift */; };
 		9AE40EAD23F012B40006B57A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE40EAC23F012B40006B57A /* AppDelegate.swift */; };
 		9AE40EAF23F012B40006B57A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE40EAE23F012B40006B57A /* SceneDelegate.swift */; };
 		9AE40EB123F012B40006B57A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE40EB023F012B40006B57A /* ContentView.swift */; };
@@ -23,6 +29,12 @@
 		072270B9E7A93B077454BE6E /* Pods_dolphin_stagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dolphin_stagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94685A975391EBCE7FA26603 /* Pods-dolphin_stagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolphin_stagram.debug.xcconfig"; path = "Target Support Files/Pods-dolphin_stagram/Pods-dolphin_stagram.debug.xcconfig"; sourceTree = "<group>"; };
 		9A47CBD723F0199E0004CAEC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9A47CBDD23F037B30004CAEC /* statusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statusView.swift; sourceTree = "<group>"; };
+		9A47CBDF23F037F90004CAEC /* statusCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statusCard.swift; sourceTree = "<group>"; };
+		9A47CBE123F038440004CAEC /* postCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postCard.swift; sourceTree = "<group>"; };
+		9A47CBE323F0387C0004CAEC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		9A47CBE623F038AD0004CAEC /* Observers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observers.swift; sourceTree = "<group>"; };
+		9A47CBE823F038CE0004CAEC /* dataTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataTypes.swift; sourceTree = "<group>"; };
 		9AE40EA923F012B40006B57A /* dolphin_stagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dolphin_stagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE40EAC23F012B40006B57A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AE40EAE23F012B40006B57A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +67,26 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9A47CBDC23F037970004CAEC /* swiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				9A47CBDD23F037B30004CAEC /* statusView.swift */,
+				9A47CBDF23F037F90004CAEC /* statusCard.swift */,
+				9A47CBE123F038440004CAEC /* postCard.swift */,
+				9A47CBE323F0387C0004CAEC /* Home.swift */,
+			);
+			path = swiftUI;
+			sourceTree = "<group>";
+		};
+		9A47CBE523F038980004CAEC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9A47CBE623F038AD0004CAEC /* Observers.swift */,
+				9A47CBE823F038CE0004CAEC /* dataTypes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		9AE40EA023F012B40006B57A = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +108,8 @@
 		9AE40EAB23F012B40006B57A /* dolphin_stagram */ = {
 			isa = PBXGroup;
 			children = (
+				9A47CBE523F038980004CAEC /* Models */,
+				9A47CBDC23F037970004CAEC /* swiftUI */,
 				9AE40EAC23F012B40006B57A /* AppDelegate.swift */,
 				9AE40EAE23F012B40006B57A /* SceneDelegate.swift */,
 				9AE40EB023F012B40006B57A /* ContentView.swift */,
@@ -227,8 +261,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AE40EAD23F012B40006B57A /* AppDelegate.swift in Sources */,
+				9A47CBE023F037F90004CAEC /* statusCard.swift in Sources */,
 				9AE40EAF23F012B40006B57A /* SceneDelegate.swift in Sources */,
+				9A47CBE223F038440004CAEC /* postCard.swift in Sources */,
+				9A47CBDE23F037B30004CAEC /* statusView.swift in Sources */,
+				9A47CBE723F038AD0004CAEC /* Observers.swift in Sources */,
+				9A47CBE923F038CE0004CAEC /* dataTypes.swift in Sources */,
 				9AE40EB123F012B40006B57A /* ContentView.swift in Sources */,
+				9A47CBE423F0387C0004CAEC /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
